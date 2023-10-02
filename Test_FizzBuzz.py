@@ -1,8 +1,7 @@
-def affiche(n):
-    results = []  
-    for i in range(1, n + 1):  
+def affiche(n1, n2):
+    results = [] 
+    for i in range(n1, n2 + 1):  
         output = ""  
-
         if i % 3 == 0 and i % 5 == 0:  
             output = "FrisBee"
         elif i % 3 == 0:  
@@ -13,8 +12,11 @@ def affiche(n):
             output = str(i)  
         results.append(output)  
     return results  
-n = int(input("Entrez la valeur de n : "))
-resultats = affiche(n)
+
+n1 = int(input("Entrez la valeur de n1 : "))
+n2 = int(input("Entrez la valeur de n2 : "))
+
+resultats = affiche(n1, n2)
 
 for resultat in resultats:
     print(resultat)
